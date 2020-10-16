@@ -37,7 +37,7 @@ router.post('/', function(req, res, next) {
             resEnd(res, {}, {status: 1, msg: '注册成功'})
           })
         }
-        conn.release(); //放回连接池
+        conn.release(); //释放连接池
       })
     })
   })
